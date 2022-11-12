@@ -5,9 +5,15 @@ using UnityEngine;
 public class CreaterBalloon : MonoBehaviour
 {
     public GameObject Balloon;
+    GameController gameC;
     void Start()
     {
-        InvokeRepeating("AddBalloon", 0f, 1.2f);
+        gameC = GameObject.Find("Admin").GetComponent<GameController>();
+        if (gameC.timer > 0)
+        {
+            InvokeRepeating("AddBalloon", 0f, 1.2f);
+        }
+        
     }
     void AddBalloon()
     {
