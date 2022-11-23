@@ -511,8 +511,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374f4efb3585fa84fb641bdfb9611daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cb: {fileID: 793417549}
   timeTxt: {fileID: 1346853995}
   balloonTxt: {fileID: 646475417}
+  timer: 5
   bombBall: 0
   finishPanel: {fileID: 905160325}
   bombEffect: {fileID: 4801924101924235561, guid: 07c0def1a39fb9e4fb5c72e114baaa0c, type: 3}

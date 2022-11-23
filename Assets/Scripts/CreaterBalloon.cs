@@ -15,8 +15,12 @@ public class CreaterBalloon : MonoBehaviour
         }
         
     }
-    void AddBalloon()
+    public void AddBalloon()
     {
         GameObject newBalloon = Instantiate(Balloon, new Vector3(Random.Range(-2.5f, 2.5f), -6, 0), transform.rotation);
+    }
+    public void CloseExplosion()
+    {
+        CancelInvoke(nameof(AddBalloon));
     }
 }

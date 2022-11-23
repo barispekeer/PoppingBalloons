@@ -7,6 +7,7 @@ using TMPro;
 
 public class GameController : MonoBehaviour
 {
+    public CreaterBalloon cb;
     public TMP_Text timeTxt, balloonTxt;
     public float timer = 5;
     public int bombBall = 0;
@@ -21,6 +22,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
+            cb.CloseExplosion();
             GameObject[] othersBall = GameObject.FindGameObjectsWithTag("Player");
             for (int i = 0; i < othersBall.Length; i++)
             {
